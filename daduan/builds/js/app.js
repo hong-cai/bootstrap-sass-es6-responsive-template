@@ -1,0 +1,1 @@
+$(document).ready(function(t){$link='<a href="#top" class="top fas fa-angle-up"></a>',t("body").append($link),t(".top").hide(),t(window).scroll(function(){100<t(this).scrollTop()?t(".top").fadeIn():t(".top").fadeOut()}),t(".top").click(function(o){o.preventDefault(),t("html,body").animate({scrollTop:0},300)})});

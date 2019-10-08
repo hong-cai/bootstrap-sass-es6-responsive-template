@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Daduan-js-version</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/370de26779.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class='nav-wrapper'>
+        <div class="nav">
+            <span class='nav-icon'>
+                <i class="fa fa-list-ul" aria-hidden="true"></i></span>
+            <div class='brand'>
+                <img class='logo' src="/images/daduan-logo.svg" alt="daduan-logo">
+                <h2>Go Funiture</h2>
+            </div>
+            <div class="cart-btn">
+
+                <span class='nav-icon'>
+                    <i class="fas fa-cart-plus"></i></span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!--end of navbar -->
+
+    <!-- hero -->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">
+                eco-friendly furniture collection
+            </h1>
+            <button class="banner-btn">shop now</button>
+        </div>
+    </header>
+    <!-- end of hero -->
+
+    <!-- products list -->
+    <section class='products'>
+        <div class="section-title">
+            <h2>Our Products</h2>
+        </div>
+        <div class="products-block">
+            <!-- single product -->
+            <!-- apend as ui.displayProducts(products) -->
+            <!-- end of single product -->
+
+
+
+
+
+            <div class="cart-overlay">
+                <div class="cart">
+                    <div class="close-btn">
+                        <i class="fa fa-window-close" aria-hidden="true"></i>
+                    </div>
+                    <h2 class="cart-title">
+                        your shopping cart
+                    </h2>
+                    <!-- cart-body's been appended by addItemToCart() -->
+                    <div class="cart-body">
+                    </div>
+                    <!-- end of cart-body -->
+                    <div class="cart-footer">
+                        <h2>your total:<span class='cart-total'>0</span></h2>
+                        <button class='clear-cart banner-btn '>clear cart</button>
+                    </div>
+                </div>
+            </div>
+            <!--end of cart -->
+        </div>
+    </section>
+
+    <!-- temp block for testing cart-overlay -->
+    <div id="cart-overlay">
+        <div id="cart">
+            <div class="close-btn">
+                <i class="fa fa-window-close" aria-hidden="true"></i>
+            </div>
+            <h2 class="cart-title">
+                your shopping cart
+            </h2>
+            <!-- cart-body's been appended by addItemToCart() -->
+            <div class="cart-body">
+            </div>
+            <!-- end of cart-body -->
+            <div class="cart-footer">
+                <h2>your total:<span class='cart-total'>0</span></h2>
+                <button class='clear-cart banner-btn '>clear cart</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- contact form -->
+    <section class="contact-form">
+        <div class="form-body">
+            <h1>Contact Us</h1>
+
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Smith">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email">
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="What's your request?"
+                    style="height:200px"></textarea>
+                <input type="submit" value="preview">
+                <input type="submit" value="Submit">
+
+            </form>
+            <hr>
+            <div class="confirm-input">
+                <h2>This is your message:</h2>
+                <span>
+                    <P>Hi,my name is:</p>
+                    <p>John Smith</p>
+                </span>
+                <p>my message here</p>
+                <p>Thank you!</p>
+                <input type="submit" value="Confirm">
+
+            </div>
+        </div>
+    </section>
+    <!--end of contact form -->
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
